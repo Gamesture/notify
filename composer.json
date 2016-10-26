@@ -1,0 +1,24 @@
+{
+  "name": "gamesture/notify",
+  "description": "Notify",
+  "homepage": "https://github.com/Gamesture/notify",
+  "minimum-stability": "dev",
+  "require": {
+    "php" : "7.*"
+  },
+  "authors": [
+    {
+      "name": "Franciszek Szczepan Wawrzak",
+      "email": "fwawrzak@gamesture.com",
+      "role": "executive developer"
+    }
+  ],
+  "support": {
+    "email": "fwawrzak@gamesture.com"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rock\\Notify\\": "src/"
+    }
+  }
+}
