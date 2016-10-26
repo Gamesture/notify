@@ -1,6 +1,7 @@
 {
   "name": "gamesture/notify",
   "description": "Notify",
+  "license": "BSD-2-Clause",
   "homepage": "https://github.com/Gamesture/notify",
   "minimum-stability": "dev",
   "require": {
