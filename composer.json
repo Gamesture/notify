@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Rock\\Notify\\": "src/"
+      "Notify\\": "src/"
     }
   }
 }
