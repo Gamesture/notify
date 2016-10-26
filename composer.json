@@ -1,6 +1,6 @@
 {
   "name": "gamesture/notify",
-  "description": "Notify",
+  "description": "Simple library to send mobile apps notifications to users from PHP",
   "license": "BSD-2-Clause",
   "homepage": "https://github.com/Gamesture/notify",
   "minimum-stability": "dev",
