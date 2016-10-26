@@ -33,11 +33,17 @@ class Apple implements IProvider
 
     public function send(Message $message, string $recipient)
     {
-        $payload = json_encode(['aps' => [
-            'badge' => 1,
+        // https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/TheNotificationPayload.html
+        $payload = $message->custom_fields;
+
+        $payload['aps'] = [
             'alert' => $message->body,
+            'badge' => $message->badge ? $message->badge : 1,
             'sound' => $message->sound ? $message->sound : 'default'
-        ]]);
+        ];
+
+        $payload = json_encode($payload);
+
 
         $msg = chr(0) . pack('n', 32) . pack('H*', $recipient) . pack('n', strlen($payload)) . $payload;
 

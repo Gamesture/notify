@@ -20,7 +20,7 @@ class Sender
 
     public function batchSend(Message $message, array $recipients)
     {
-        return $this->provider->send($message, $recipients);
+        return $this->provider->batchSend($message, $recipients);
     }
 
 }
