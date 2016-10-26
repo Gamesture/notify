@@ -9,6 +9,10 @@ class Apple implements IProvider
     private $fp;
     const URL = 'ssl://gateway.push.apple.com:2195';
 
+    /**
+     * Apple constructor.
+     * @param string $certificate_path
+     */
     public function __construct(string $certificate_path)
     {
         $ctx = stream_context_create();
