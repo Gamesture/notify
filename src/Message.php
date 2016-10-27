@@ -1,6 +1,6 @@
 <?php
 
-namespace Notify;
+namespace Gamesture\Notify;
 
 class Message
 {

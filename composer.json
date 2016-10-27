@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Notify\\": "src/"
+      "Gamesture\\Notify\\": "src/"
     }
   }
 }

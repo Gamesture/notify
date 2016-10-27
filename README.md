@@ -9,10 +9,12 @@ Install with [Composer](http://getcomposer.org)
 
 ## Usage
 ```php
-$provider = new \Notify\Providers\Apple('/path/to/certificate.pem');
-$sender = new \Notify\Sender($provider);
+use Gamesture\Notify;
+
+$provider = new Notify\Providers\Apple('/path/to/certificate.pem');
+$sender = new Notify\Sender($provider);
 $tokens = ['XXX', 'YYY'];
-$message = new \Notify\Message('Notification text');
+$message = new Notify\Message('Notification text');
 //optionally set custom data:
 //$message->badge = 2;
 //$message->sound = 'bell';

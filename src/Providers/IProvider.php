@@ -1,8 +1,8 @@
 <?php
 
-namespace Notify\Providers;
+namespace Gamesture\Notify\Providers;
 
-use Notify\Message;
+use Gamesture\Notify\Message;
 
 interface IProvider
 {

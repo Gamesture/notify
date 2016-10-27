@@ -1,11 +1,14 @@
 <?php
 
-namespace Notify;
+namespace Gamesture\Notify;
 
-use Notify\Providers\IProvider;
+use Gamesture\Notify\Providers\IProvider;
 
 class Sender
 {
+    /**
+     * @var IProvider
+     */
     private $provider;
 
     /**
